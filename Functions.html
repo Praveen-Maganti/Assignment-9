@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <button style="background-color:aqua;width:20vw;height:7vh;border-color:white;" onclick="msg()">Click Here</button>
+
+
+    <script type="text/javascript">
+
+    // Function Invoked by the button
+
+     function msg(){
+        document.write('<span style="font-size:22px;"> This MSG is Displayed</span><br><br>');
+     }
+
+
+      // Anonymous Function assigned to a variable.
+
+      const greet=function(name){
+
+        document.write('<br><br><br><span style="font-size:23px;">Hello, '+name+' (from anonymous function) </span><br><br>');
+
+      }
+      greet("Name");
+
+      // Arrow Function
+
+      const multiply=(a,b) =>{ return a*b };
+      document.write('<span style="font-size:23px;">3*4= '+multiply(3,4)+' (from arrow function) </span><br><br>');
+
+
+      // Higher Order Function: takes another function as a argument
+
+      const add= (a,b) => a+b ;
+      function applyOperation(a,b,add){
+        return add(a,b);
+      }
+
+    document.write('<span style="font-size:23px;">5 + 7 = '+applyOperation(5,7,add)+' (from Higher Order function) </span><br><br><br>');
+
+    // Call Back Function
+    document.write('<span style="font-size:22px;font-weight:bold;">CallBack Function: </span><br><br>');
+
+     function sayHello(){
+            document.write('<span style="font-size:22px;">Inside Hello Function </span><br><br>');
+            greeting();
+     }
+
+     function greeting(){
+        document.write('<span style="font-size:22px;">Hello from the callback Function!</span><br><br>');
+     }
+
+     sayHello();
+    
+     // Immediately Invoked Function Expression
+    document.write('<span style="font-size:22px;font-weight:bold;">IIFE (Immediately Invoked Function Expression) : Runs Immediately </span><br><br>');
+
+    (function(){
+        document.write('<span style="font-size:22px;">This is an IIFE - it runs immediately!  </span><br><br>');
+    })();
+
+
+     
+
+    </script>
+
+</body>
+</html>
