@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script type="text/javascript">
+      // String Declearation 
+      document.write('<span style="font-size:23px;font-weight:bold;">String declearations in JS</span><br><br>');
+      var strLiteral="RCB Won the 2025 IPL Trophy";
+      var strLiteral=`RCB Won the 2025 IPL Trophy`;
+      var strLiteral='RCB Won the 2025 IPL Trophy';
+
+      let strObject=new String("Punjab Lost the IPL 2025 final match");
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Using String Literal: </span>'+strLiteral+"<br>");
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Using String Object: </span>'+strObject+"<br><br><br>");
+
+      // charAt() Function
+      document.write('<span style="font-size:22px;font-weight:bold;">charAt() Function in Strings:</span><br><br>');
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Accessing character at 2nd index in strLiteral: </span>'+strLiteral.charAt(1)+"<br><br><br>");
+
+      // concat() Function
+      document.write('<span style="font-size:22px;font-weight:bold;">concat() Function in Strings:</span><br><br>');
+      var s1="Javascript ";
+      var s2="concat Example";
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Concating Strings using concat function: </span>'+s1.concat(s2)+"<br><br><br>");
+
+      var str = "India Won the match. Australia also Won once.";
+      
+    // indexOf() Function
+        document.write('<span style="font-size:22px;font-weight:bold;">indexOf() Function in Strings:</span><br><br>');
+        document.write('<span style="font-size:16.5px;font-weight:bold;">First occurrence of "Won" in strLiteral: </span>' + str.indexOf("Won") + "<br><br><br>");
+
+    // lastIndexOf() Function
+        document.write('<span style="font-size:22px;font-weight:bold;">lastIndexOf() Function in Strings:</span><br><br>');
+        document.write('<span style="font-size:16.5px;font-weight:bold;">Last occurrence of "Won" in strLiteral (same as first if only one match): </span>' + str.lastIndexOf("Won") + "<br><br><br>");
+
+
+    // toLowerCase() Function
+      document.write('<span style="font-size:22px;font-weight:bold;">toLowerCase() Function in Strings:</span><br><br>');
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Changing all characters to LowerCase in strLiteral: </span>'+strLiteral.toLowerCase()+"<br><br><br>");
+
+
+    // toUpperCase() Function
+      document.write('<span style="font-size:22px;font-weight:bold;">toUpperCase() Function in Strings:</span><br><br>');
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Changing all characters to UpperCase in strLiteral: </span>'+strLiteral.toUpperCase()+"<br><br><br>");
+
+
+    // SLICE() Function
+      document.write('<span style="font-size:22px;font-weight:bold;">slice() Function in Strings:</span><br><br>');
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Slicing from index 0 to 7 in strLiteral: </span>'+strLiteral.slice(0,8)+"<br><br><br>");
+
+
+    // TRIM() Function
+      let demo="     RCB WON IN 2025    ";
+      document.write('<span style="font-size:22px;font-weight:bold;">trim() Function in Strings:</span><br><br>');
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Removing whitespaces from the leading and trailing of the String: </span>'+demo.trim()+"<br><br><br>");
+    
+
+    // SPLIT() Function
+      document.write('<span style="font-size:22px;font-weight:bold;">split() Function in Strings:</span><br><br>');
+      document.write('<span style="font-size:16.5px;font-weight:bold;">Spliting strLiteral based on the whitespaces : </span>'+strLiteral.split(" ")+"<br><br><br>");
+
+
+    </script>
+</body>
+</html>
